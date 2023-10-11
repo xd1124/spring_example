@@ -13,5 +13,6 @@ public class Lesson01Ex02Controller {
 //		return "/WEB-INF/jsp/lesson01/ex02.jsp";
 		// application properties에 등록
 		return "/lesson01/ex02"; // jsp view 경로와 이름
+		// 변경 확인
 	}
 }
