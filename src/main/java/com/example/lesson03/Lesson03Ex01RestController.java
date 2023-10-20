@@ -1,5 +1,7 @@
 package com.example.lesson03;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -18,12 +20,18 @@ public class Lesson03Ex01RestController {
 	// URL : http://localhost/lesson03/ex01?id=5
 	@RequestMapping("/lesson03/ex01")
 	public Review ex01(
-//					@RequestParam("id") int id // 필수 파라미터
+					@RequestParam("id") int id // 필수 파라미터
 //					@RequestParam(value="id") int id // 필수
 //					@RequestParam(value="id", required=true) int id // 필수
 //					@RequestParam(value="id", required=false) Integer id // 비필수
-					@RequestParam(value="id", defaultValue="1") int id // 비필수, 디폴트 1
+//					@RequestParam(value="id", defaultValue="1") int id // 비필수, 디폴트 1
 			) {
 		return reviewBO.getReview(id);
+	}
+	
+	@RequestMapping("/lesson03/ex01/1")
+	public List<Review> ex01() {
+		List<Review> review = reviewBO.getReviewList();
+		return review;
 	}
 }
