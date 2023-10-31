@@ -12,6 +12,27 @@
 <body>
 	<div class="container">
 		<h1>회원가입</h1>
+		
+		<form method="post" action="/lesson04/ex01/sign-up">
+			<div class="form-group"> <!-- form - action - name -->
+				<label for="name">이름</label>  <!-- label for - id -->
+				<input type="text" class="form-control col-3" id="name" name="name">
+			</div>
+			<div class="form-group">
+				<label for="birth">생년월일</label>
+				<input type="text" id="birth" name="yyyymmdd" class="form-control col-3">
+			</div>
+			<div class="form-group">
+				<label for="email">이메일</label>
+				<input type="text" id="email" name="email" class="form-control col-3">
+			</div>
+			<div class="form-group">
+				<label for="introduce">자기소개</label>
+				<textarea id="introduce" name="introduce" class="form-control col-5"></textarea>
+			</div>
+			
+			<input type="submit" class="btn btn-success" value="회원가입">
+		</form>
 	</div>
 </body>
 </html>
