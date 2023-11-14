@@ -49,8 +49,8 @@ public class Lesson04Ex01Controller {
 		User user = userBO.getLatestUser();
 		model.addAttribute("result", user);
 		model.addAttribute("title", "최신 유저 정보");
-		
-		// Vies -> Model -> Controller
+
+		// Views -> Model -> Controller
 		return "/lesson04/getLatestUser"; // 결과 jsp 경로
 	}
 	

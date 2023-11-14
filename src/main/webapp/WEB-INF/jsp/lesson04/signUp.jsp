@@ -13,7 +13,7 @@
 	<div class="container">
 		<h1>회원가입</h1>
 		
-		<form method="post" action="/lesson04/ex01/sign-up">
+		<form method="get" action="/lesson04/ex01/get-latest-user-view">
 			<div class="form-group"> <!-- form - action - name -->
 				<label for="name">이름</label>  <!-- label for - id -->
 				<input type="text" class="form-control col-3" id="name" name="name">
